@@ -1,2 +1,7 @@
+from .board import Board
+
+
 def main():
-    print("pyPCBtoSTEP active!")
+    gerbersDir = 'examples/exampleGerbers'
+    test = Board(gerbersDir)
+    test.open_files()
