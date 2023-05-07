@@ -1,4 +1,7 @@
 import os
+import solid as s
+
+from .util import copper_weight_to_thickness
 
 
 class Board:
@@ -83,3 +86,10 @@ class Board:
                 self.files['bottom_mask'] = file
             elif ('LEGEND' in filename[:-4].upper() or 'SILK' in filename[:-4].upper() or upper_file.find('LEGEND') != -1 or upper_file.find('SILK') != -1):
                 self.files['bottom_silk'] = file
+
+    def draw_copper(self, copper_weight):
+        thickness = copper_weight_to_thickness(copper_weight)
+
+        obj = s.cube((1, 1, thickness))
+
+        print(s.scad_render(obj))

@@ -1,3 +1,26 @@
 autopep8==2.0.2
+certifi==2022.12.7
+charset-normalizer==3.1.0
+cssselect2==0.7.0
+euclid3==0.1
+freetype-py==2.3.0
+idna==3.4
+lxml==4.9.2
+Pillow==9.5.0
+ply==3.11
+prettytable==0.7.2
+pycairo==1.23.0
 pycodestyle==2.10.0
+-e git+https://github.com/Kingston802/pyPCBtoSTEP.git@9de02e343b95ff77e5562384ba8b80913e3fda27#egg=pyPCBtoSTEP
+pypng==0.0.19
+reportlab==4.0.0
+requests==2.30.0
+rlPyCairo==0.2.0
+six==1.16.0
+solidpython==1.1.3
+svglib==1.5.1
+svgwrite==1.4.3
+tinycss2==1.2.1
 tomli==2.0.1
+urllib3==2.0.2
+webencodings==0.5.1
